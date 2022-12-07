@@ -6,6 +6,15 @@
 
 window.onload = () => {
 
+    // show the modal in the viewport
+    let showModal = () => {
 
+    };
+
+    // listen for click on "show-modal" element
+    let showModalElement = document.getElementById("show-modal");
+    showModalElement.addEventListener(`click`, () => {
+        showModal();
+    });
 
 };
