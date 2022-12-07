@@ -12,7 +12,7 @@ window.onload = () => {
     };
 
     // listen for click on "show-modal" element
-    let showModalElement = document.getElementById("show-modal");
+    let showModalElement = document.getElementById(`show-modal`);
     showModalElement.addEventListener(`click`, () => {
         showModal();
     });
