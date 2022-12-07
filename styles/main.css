@@ -1,0 +1,10 @@
+/*
+ *  Bri D'Urso -- CS275: Assignment 4
+ *
+ *  12-7-22
+ */
+
+.modal-overlay-panel {
+  display: hidden;
+  color: rgba(40, 27, 70, 0.5);
+}
