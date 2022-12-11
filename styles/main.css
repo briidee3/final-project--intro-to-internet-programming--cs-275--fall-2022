@@ -15,6 +15,6 @@
   backdrop-filter: blur(3px);
 }
 
-.hidden {
+#hidden {
   display: none;
 }
