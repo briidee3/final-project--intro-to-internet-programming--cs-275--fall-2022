@@ -28,5 +28,10 @@ window.onload = () => {
     modalOverlayPanel.addEventListener(`click`, () => {
         modalOverlayPanel.id = `hidden`;
     });
+    // close modal if "esc" is pressed on keyboard
+    document.addEventListener(`keydown`, (key) => {
+        if (key.key === `Escape`)
+            modalOverlayPanel.id = `hidden`;
+    });
 
 };
