@@ -61,6 +61,6 @@ ul, li {
   z-index: 3;
 }
 
-#hidden {
+.hidden {
   display: none;
 }
