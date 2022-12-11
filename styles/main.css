@@ -4,8 +4,11 @@
  *  12-7-22
  */
 
-.modal-overlay-panel {
+#hidden {
+  display: none;
+}
 
+.modal-overlay-panel {
   position: fixed;
   background-color: rgba(21, 18, 29, 0.829);
   left: 0%;
@@ -15,6 +18,12 @@
   backdrop-filter: blur(3px);
 }
 
-#hidden {
-  display: none;
+.modal-content-pane {
+  position: static;
+  background-color: aliceblue;
+  left: 20%;
+  top: 25%;
+  width: 60%;
+  height: 50%;
+  z-index: 3;
 }
