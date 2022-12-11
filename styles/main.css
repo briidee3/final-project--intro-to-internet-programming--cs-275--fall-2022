@@ -16,12 +16,13 @@
   width: 100%;
   height: 100%;
   backdrop-filter: blur(3px);
+  z-index: 2;
 }
 
 .modal-content-pane {
   position: static;
   background-color: aliceblue;
-  left: 20%;
+  left: 20vw;
   top: 25%;
   width: 60%;
   height: 50%;
