@@ -8,10 +8,27 @@ header {
   position: sticky;
   background-color: rgb(218, 74, 74);
   top: 0;
-  height: 60px;
+  height: 80px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   font-variant: small-caps;
+}
+
+header a {
+  display: flex;
+  margin: 5px;
+  padding: 6px;
+  background-color: rgb(224, 88, 88);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #hidden {
