@@ -20,4 +20,9 @@ window.onload = () => {
         showModal();
     });
 
+    // close modal if "modal-overlay-panel" is clicked
+    modalOverlayPanel.addEventListener(`click`, () => {
+        modalOverlayPanel.id = `hidden`;
+    });
+
 };
