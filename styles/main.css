@@ -4,9 +4,20 @@
  *  12-11-22
  */
 
+body {
+  margin: 0;
+}
+
+main {
+  margin: 8px;
+}
+
+/* header styling */
+
 header {
   position: sticky;
   background-color: rgb(218, 74, 74);
+  margin-top: -5px;
   top: 0;
   height: 80px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -61,6 +72,7 @@ ul, li {
   z-index: 3;
 }
 
+/* implement "hidden" class functionality */
 .hidden {
   display: none;
 }
