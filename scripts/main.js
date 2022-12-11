@@ -6,9 +6,13 @@
 
 window.onload = () => {
 
+    /* setting up modal functionality */
     // gather "show-modal" and "modal-overlay-panel" elements from DOM tree
     let showModalElement = document.getElementById(`show-modal`);
     let modalOverlayPanel = document.getElementsByClassName(`modal-overlay-panel`)[0];
+
+    // initiate modalOverlayPanel as hidden
+    modalOverlayPanel.id = `hidden`;
 
     // show the modal in the viewport
     let showModal = () => {
