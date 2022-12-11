@@ -25,8 +25,9 @@ window.onload = () => {
     });
 
     // close modal if "modal-overlay-panel" is clicked
-    modalOverlayPanel.addEventListener(`click`, () => {
-        modalOverlayPanel.id = `hidden`;
+    modalOverlayPanel.addEventListener(`click`, (click) => {
+        if (click.target !== modalOverlayPanel.children[0])
+            modalOverlayPanel.id = `hidden`;
     });
     // close modal if "esc" is pressed on keyboard
     document.addEventListener(`keydown`, (key) => {
