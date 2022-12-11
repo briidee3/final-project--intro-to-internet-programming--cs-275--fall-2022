@@ -1,7 +1,7 @@
 /*
  *  Bri D'Urso -- CS275: Assignment 4
  *
- *  12-7-22
+ *  12-11-22
  */
 
 header {
@@ -40,10 +40,6 @@ ul, li {
   padding: 0;
 }
 
-#hidden {
-  display: none;
-}
-
 .modal-overlay-panel {
   position: fixed;
   background-color: rgba(21, 18, 29, 0.829);
@@ -63,4 +59,8 @@ ul, li {
   width: 60vw;
   height: 60vh;
   z-index: 3;
+}
+
+#hidden {
+  display: none;
 }
