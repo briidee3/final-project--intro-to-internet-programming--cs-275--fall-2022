@@ -20,11 +20,11 @@
 }
 
 .modal-content-pane {
-  position: static;
+  position: relative;
   background-color: aliceblue;
   left: 20vw;
-  top: 25%;
-  width: 60%;
-  height: 50%;
+  top: 20vh;
+  width: 60vw;
+  height: 60vh;
   z-index: 3;
 }
