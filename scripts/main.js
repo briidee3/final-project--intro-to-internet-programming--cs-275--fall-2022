@@ -7,7 +7,6 @@
 window.onload = () => {
 
     /* setting up modal functionality */
-    // gather "show-modal" and "modal-overlay-panel" elements from DOM tree
     let showModalElement = document.getElementById(`show-modal`);
     let modalOverlayPanel = document.getElementsByClassName(`modal-overlay-panel`)[0];
 
@@ -31,5 +30,24 @@ window.onload = () => {
         if (key.key === `Escape`)
             modalOverlayPanel.classList.add(`hidden`);
     });
+
+
+    /* setting up drop-down/side-tray menu functionality */
+    let showMenuElement = document.getElementById(`show-menu`);
+    let menuContent = document.getElementById(`menu-content`);
+
+
+    // show drop-down/side-tray menu when clicked
+    showMenuElement.addEventListener(`click`, () => {
+        showMenu();
+    });
+
+    // show drop-down/side-tray menu when clicked
+    let showMenu = () => {
+        if (menuContent.classList.contains(`hidden`))
+            menuContent.classList.remove(`hidden`);
+        else
+            menuContent.classList.add(`hidden`);
+    };
 
 };
