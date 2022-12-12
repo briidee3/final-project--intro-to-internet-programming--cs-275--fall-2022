@@ -26,7 +26,8 @@ main {
 /* for use in transitioning between menus */
 
 nav.unhidden-menu {
-  max-height: calc(var(--nav-element-height) * var(--num-nav-elements)
+  max-height:
+    calc(var(--nav-element-height) * var(--num-nav-elements)
     + var(--nav-element-height) * var(--num-ul-elements));
 }
 
@@ -59,10 +60,11 @@ header a {
   padding: 6px;
   background-color: rgb(224, 88, 88);
   color: aliceblue;
-  text-shadow:rgb(122, 46, 46) -1px -1px 1px,
-  rgb(122, 46, 46) -1px 1px 1px,
-  rgb(122, 46, 46) 1px -1px 1px,
-  rgb(122, 46, 46) 1px 1px 1px;
+  text-shadow:
+    rgb(122, 46, 46) -1px -1px 1px,
+    rgb(122, 46, 46) -1px 1px 1px,
+    rgb(122, 46, 46) 1px -1px 1px,
+    rgb(122, 46, 46) 1px 1px 1px;
 }
 
 a:link {
@@ -137,7 +139,7 @@ nav.mobile ul {
 
 .modal-overlay-panel {
   position: fixed;
-  background-color: rgba(21, 18, 29, 0.829);
+  background-color: rgba(21, 18, 29, .829);
   left: 0%;
   top: 0%;
   width: 100%;
