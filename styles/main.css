@@ -18,8 +18,9 @@ body {
 }
 
 main {
-  margin: 8px;
-  margin-top: calc(var(--header-height) + 16px);
+  margin-top: calc(var(--header-height));
+  border: 10px ridge rgb(130, 211, 98);
+  padding: 8px;
 }
 
 /* for use in transitioning between menus */
@@ -158,4 +159,10 @@ nav.mobile ul {
 /* implement "hidden" class functionality */
 .hidden {
   display: none;
+}
+
+/* prettifying the bulk of the page */
+
+main {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
