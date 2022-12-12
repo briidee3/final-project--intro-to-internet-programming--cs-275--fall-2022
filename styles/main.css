@@ -82,7 +82,7 @@ nav {
   font-weight: 500;
   max-height: 0;
   overflow: hidden;
-  transition: 500ms;
+  transition: 650ms;
 }
 
 nav a {
@@ -96,7 +96,7 @@ nav a {
 nav ul ul {
   max-height: 0;
   overflow: hidden;
-  transition: 500ms;
+  transition: 650ms;
 }
 
 /* modal styling */
