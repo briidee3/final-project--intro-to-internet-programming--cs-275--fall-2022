@@ -50,4 +50,16 @@ window.onload = () => {
         showMenu(menuContent);
     });
 
+    // show sub-menu when a menu option is clicked
+    let showSubMenuElements = document.getElementsByClassName(`menu-option`);
+
+    // go through and add an event listener to each element of the showSubMenuElements array
+    for (let i = 0; i < showSubMenuElements.length; i++) {
+        // using the first child since that is the "a" element
+        showSubMenuElements[i].firstChild.addEventListener(`click`, () => {
+            // using "children[1]" since that is the location of the "ul" element containing the sub-menu
+            showMenu(showSubMenuElements[i].children[1]);
+        });
+    }
+
 };
