@@ -35,7 +35,7 @@ header a {
   margin: 5px;
   padding: 6px;
   background-color: rgb(224, 88, 88);
-  color:rgb(74, 170, 170);
+  color: aliceblue;
   text-shadow:rgb(122, 46, 46) -1px -1px 1px,
   rgb(122, 46, 46) -1px 1px 1px,
   rgb(122, 46, 46) 1px -1px 1px,
@@ -64,8 +64,16 @@ nav {
   background-color: rgb(74, 170, 170);
   top: var(--header-height);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   transition: 500ms;
+}
+
+nav a {
+  display: flex;
+  margin: 3px;
+  padding: 6px;
+  background-color: rgb(80, 184, 184);
+  color: aliceblue;
 }
 
 /* modal styling */
