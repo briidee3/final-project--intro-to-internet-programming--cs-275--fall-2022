@@ -64,7 +64,7 @@ window.onload = () => {
         }
 
         // implement width breakpoint for drop-down/side-tray menu
-        if (window.innerWidth < 736)
+        if (window.outerWidth < 736)
             menuContent.classList.add(`mobile`);
         else
             menuContent.classList.remove(`mobile`);
