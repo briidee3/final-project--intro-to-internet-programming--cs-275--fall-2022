@@ -7,7 +7,7 @@
 /* used for global CSS variable initialization */
 
 :root {
-  --nav-element-height: 40px;
+  --nav-element-height: 8vh;
   --header-height: calc(var(--nav-element-height) * 2);
   --num-nav-elements: 1;
   --num-ul-elements: 3;
@@ -19,6 +19,7 @@ body {
 
 main {
   margin: 8px;
+  margin-top: calc(var(--header-height) + 16px);
 }
 
 /* for use in transitioning between menus */
@@ -48,6 +49,7 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
   font-variant: small-caps;
+  font-size: calc(var(--header-height) / 4);
 }
 
 header a {
@@ -86,6 +88,7 @@ nav {
   top: var(--header-height);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
+  font-size: calc(var(--header-height) / 5);
   max-height: 0;
   overflow: hidden;
   transition: 650ms;
