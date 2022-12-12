@@ -7,8 +7,8 @@
 /* used for global CSS variable initialization */
 
 :root {
-  --header-height: 80px;
   --nav-element-height: 40px;
+  --header-height: calc(var(--nav-element-height) * 2);
   --num-nav-elements: 2;
   --num-ul-elements: 6;
 }
@@ -74,7 +74,9 @@ ul, li {
 /* nav menu styling */
 
 nav {
+  display: block;
   position: sticky;
+  text-align: center;
   background-color: rgb(74, 170, 170);
   top: var(--header-height);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,17 +87,38 @@ nav {
 }
 
 nav a {
+  top: 0;
   display: flex;
   margin: 3px;
   padding: 6px;
   background-color: rgb(80, 184, 184);
   color: aliceblue;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 nav ul ul {
+  flex-direction: column;
   max-height: 0;
   overflow: hidden;
   transition: 650ms;
+}
+
+.menu-option {
+  flex-grow: 1;
+}
+
+nav.mobile {
+  max-width: 25vw;
+}
+
+nav.mobile ul {
+  flex-direction: column;
 }
 
 /* modal styling */

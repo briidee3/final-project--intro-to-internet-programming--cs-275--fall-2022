@@ -63,6 +63,12 @@ window.onload = () => {
                 openMenus[0].classList.remove(`unhidden-menu`);
         }
 
+        // implement width breakpoint for drop-down/side-tray menu
+        if (window.innerWidth < 736)
+            menuContent.classList.add(`mobile`);
+        else
+            menuContent.classList.remove(`mobile`);
+
     });
 
     // show sub-menu when a menu option is clicked
@@ -76,8 +82,4 @@ window.onload = () => {
             showMenu(showSubMenuElements[i].children[1]);
         });
     }
-
-    // hide the sub menu after clicking elsewhere
-
-
 };
