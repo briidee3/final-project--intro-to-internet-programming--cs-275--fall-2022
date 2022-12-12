@@ -36,10 +36,10 @@ window.onload = () => {
 
     // show drop-down/side-tray menu when clicked
     let showMenu = (menu) => {
-        if (menu.classList.contains(`hidden-menu`))
-            menu.classList.remove(`hidden-menu`);
+        if (menu.classList.contains(`unhidden-menu`))
+            menu.classList.remove(`unhidden-menu`);
         else
-            menu.classList.add(`hidden-menu`);
+            menu.classList.add(`unhidden-menu`);
     };
 
     // show drop-down/side-tray menu when clicked
@@ -61,5 +61,8 @@ window.onload = () => {
             showMenu(showSubMenuElements[i].children[1]);
         });
     }
+
+    // hide the sub menu after clicking elsewhere
+
 
 };

@@ -8,6 +8,9 @@
 
 :root {
   --header-height: 80px;
+  --nav-element-height: 40px;
+  --num-nav-elements: 2;
+  --num-ul-elements: 6;
 }
 
 body {
@@ -19,8 +22,14 @@ main {
 }
 
 /* for use in transitioning between menus */
-.hidden-menu {
-  max-height: 100px;
+
+nav.unhidden-menu {
+  max-height: calc(var(--nav-element-height) * var(--num-nav-elements)
+    + var(--nav-element-height) * var(--num-ul-elements));
+}
+
+ul.unhidden-menu {
+  max-height: calc(var(--nav-element-height) * var(--num-ul-elements));
 }
 
 /* header styling */
@@ -84,7 +93,7 @@ nav a {
   color: aliceblue;
 }
 
-.menu-option ul {
+nav ul ul {
   max-height: 0;
   overflow: hidden;
   transition: 500ms;
