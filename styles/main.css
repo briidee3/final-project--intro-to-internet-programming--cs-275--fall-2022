@@ -127,7 +127,7 @@ nav ul ul {
 }
 
 .menu-option a {
-  border: 4px ridge rgba(60, 139, 139, 0.582);
+  border: 4px ridge rgba(60, 139, 139, .582);
 }
 
 nav.mobile {
