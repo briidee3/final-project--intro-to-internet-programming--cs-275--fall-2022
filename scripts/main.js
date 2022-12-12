@@ -33,21 +33,21 @@ window.onload = () => {
 
 
     /* setting up drop-down/side-tray menu functionality */
-    let showMenuElement = document.getElementById(`show-menu`);
-    let menuContent = document.getElementById(`menu-content`);
-
 
     // show drop-down/side-tray menu when clicked
-    showMenuElement.addEventListener(`click`, () => {
-        showMenu();
-    });
-
-    // show drop-down/side-tray menu when clicked
-    let showMenu = () => {
-        if (menuContent.classList.contains(`hidden`))
-            menuContent.classList.remove(`hidden`);
+    let showMenu = (menu) => {
+        if (menu.classList.contains(`hidden`))
+            menu.classList.remove(`hidden`);
         else
-            menuContent.classList.add(`hidden`);
+            menu.classList.add(`hidden`);
     };
+
+    // show drop-down/side-tray menu when clicked
+    let showMenuElement = document.getElementById(`show-menu`);
+    let menuContent = document.getElementsByTagName(`nav`)[0];
+
+    showMenuElement.addEventListener(`click`, () => {
+        showMenu(menuContent);
+    });
 
 };
