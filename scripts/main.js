@@ -36,10 +36,10 @@ window.onload = () => {
 
     // show drop-down/side-tray menu when clicked
     let showMenu = (menu) => {
-        if (menu.classList.contains(`hidden`))
-            menu.classList.remove(`hidden`);
+        if (menu.classList.contains(`hidden-menu`))
+            menu.classList.remove(`hidden-menu`);
         else
-            menu.classList.add(`hidden`);
+            menu.classList.add(`hidden-menu`);
     };
 
     // show drop-down/side-tray menu when clicked
