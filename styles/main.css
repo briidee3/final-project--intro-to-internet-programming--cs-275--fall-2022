@@ -5,6 +5,7 @@
  */
 
 /* used for global CSS variable initialization */
+
 :root {
   --header-height: 80px;
 }
@@ -15,6 +16,11 @@ body {
 
 main {
   margin: 8px;
+}
+
+/* for use in transitioning between menus */
+.hidden-menu {
+  max-height: 100px;
 }
 
 /* header styling */
@@ -65,6 +71,8 @@ nav {
   top: var(--header-height);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
+  max-height: 0;
+  overflow: hidden;
   transition: 500ms;
 }
 
@@ -74,6 +82,12 @@ nav a {
   padding: 6px;
   background-color: rgb(80, 184, 184);
   color: aliceblue;
+}
+
+.menu-option ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: 500ms;
 }
 
 /* modal styling */
