@@ -9,8 +9,8 @@
 :root {
   --nav-element-height: 40px;
   --header-height: calc(var(--nav-element-height) * 2);
-  --num-nav-elements: 2;
-  --num-ul-elements: 6;
+  --num-nav-elements: 1;
+  --num-ul-elements: 3;
 }
 
 body {
@@ -30,6 +30,11 @@ nav.unhidden-menu {
 
 ul.unhidden-menu {
   max-height: calc(var(--nav-element-height) * var(--num-ul-elements));
+}
+
+nav.mobile.unhidden-menu {
+  max-width: 25vw;
+  max-height: 100vh;
 }
 
 /* header styling */
@@ -87,7 +92,6 @@ nav {
 }
 
 nav a {
-  top: 0;
   display: flex;
   margin: 3px;
   padding: 6px;
@@ -114,10 +118,14 @@ nav ul ul {
 }
 
 nav.mobile {
-  max-width: 25vw;
+  position: fixed;
+  max-width: 0;
+  overflow: hidden;
+  transition: 650ms;
 }
 
 nav.mobile ul {
+  width: 25vw;
   flex-direction: column;
 }
 
