@@ -36,18 +36,33 @@ window.onload = () => {
 
     // show drop-down/side-tray menu when clicked
     let showMenu = (menu) => {
-        if (menu.classList.contains(`unhidden-menu`))
+        // if menu is open, close it
+        if (menu.classList.contains(`unhidden-menu`)) {
             menu.classList.remove(`unhidden-menu`);
-        else
+            return true;
+        }
+        // otherwise, open it
+        else {
             menu.classList.add(`unhidden-menu`);
+            return false;
+        }
     };
 
     // show drop-down/side-tray menu when clicked
     let showMenuElement = document.getElementById(`show-menu`);
     let menuContent = document.getElementsByTagName(`nav`)[0];
 
+    // show menu
     showMenuElement.addEventListener(`click`, () => {
-        showMenu(menuContent);
+        // close all other menus when this menu is closed (otherwise just opens it)
+        if (showMenu(menuContent)) {
+            // get a list of all open menus
+            let openMenus = document.getElementsByClassName(`unhidden-menu`);
+            // while the list is not empty, close the first menu in the list
+            while (openMenus.length)
+                openMenus[0].classList.remove(`unhidden-menu`);
+        }
+
     });
 
     // show sub-menu when a menu option is clicked

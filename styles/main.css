@@ -74,7 +74,6 @@ ul, li {
 /* nav menu styling */
 
 nav {
-  display: block;
   position: sticky;
   background-color: rgb(74, 170, 170);
   top: var(--header-height);
