@@ -35,20 +35,6 @@ window.onload = () => {
     /* setting up drop-down/side-tray menu functionality */
 
     // show drop-down/side-tray menu when clicked
-    let showMenu = (menu) => {
-        // if menu is open, close it
-        if (menu.classList.contains(`unhidden-menu`)) {
-            menu.classList.remove(`unhidden-menu`);
-            return true;
-        }
-        // otherwise, open it
-        else {
-            menu.classList.add(`unhidden-menu`);
-            return false;
-        }
-    };
-
-    // show drop-down/side-tray menu when clicked
     let showMenuElement = document.getElementById(`show-menu`);
     let menuContent = document.getElementsByTagName(`nav`)[0];
 
@@ -62,13 +48,6 @@ window.onload = () => {
             while (openMenus.length)
                 openMenus[0].classList.remove(`unhidden-menu`);
         }
-
-        // implement width breakpoint for drop-down/side-tray menu
-        if (window.outerWidth < 736)
-            menuContent.classList.add(`mobile`);
-        else
-            menuContent.classList.remove(`mobile`);
-
     });
 
     // show sub-menu when a menu option is clicked
@@ -82,4 +61,32 @@ window.onload = () => {
             showMenu(showSubMenuElements[i].children[1]);
         });
     }
+};
+
+// show drop-down/side-tray menu when clicked
+let showMenu = (menu) => {
+    // if menu is open, close it
+    if (menu.classList.contains(`unhidden-menu`)) {
+        menu.classList.remove(`unhidden-menu`);
+        return true;
+    }
+    // otherwise, open it
+    else {
+        menu.classList.add(`unhidden-menu`);
+        return false;
+    }
+};
+
+// implement width breakpoint for drop-down/side-tray menu when window is resized
+window.onresize = () => {
+    let navMenu = document.getElementsByTagName(`nav`)[0];
+
+    if (window.outerWidth < 736)
+        navMenu.classList.add(`mobile`);
+    else
+        navMenu.classList.remove(`mobile`);
+
+    if (navMenu.classList.contains(`unhidden-menu`))
+        showMenu(navMenu);
+
 };
