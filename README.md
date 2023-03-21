@@ -1,4 +1,7 @@
-# Fall 2022 Intro to Internet Programming — Final Project
+# This is a project I did for CS275 Intro to Internet Programming at the University of Hartford in the Fall '22 semester. This project was done on my own over the course of a couple of days (if I remember correctly [adding this note during Spring '23, and my memory is prone to certain issues at times]). Long story short, things went well, and I got an A on the project.
+
+
+## Fall 2022 Intro to Internet Programming — Final Project
 
 ☞ **Plagiarism in any form will result in failing the entire course. You’ve been duly warned.** ☜
 * **Do not start this project until you have read these instructions carefully.**
